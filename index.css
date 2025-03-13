@@ -1,12 +1,13 @@
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
 img {
     width: 200px; /* 幅を200pxに設定 */
     height: auto; /* 高さを自動調整 */
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 header {
     display: flex;
     justify-content: space-between;
@@ -33,3 +34,55 @@ nav ul li a {
     text-decoration: none;
 }
 
+
+.title {
+    padding: 30px;
+    text-align: center; /* テキストを中央表示 */
+    font-family:'Times New Roman', Times, serif;
+    font-size: 24px; /* 少し大きめに */
+    font-weight: 600; /* 強調 */
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly; /* 画像同士の間隔を均等にする */
+    align-items: center;
+    max-width: 82%; /* コンテナの最大幅を調整 */
+    margin: 0 auto; /* 中央配置 */
+}
+
+
+.image-container img {
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*レスポンシブデザイン*/
+@media (max-width: 768px) {
+    .image-container {
+        justify-content: center; /* 小さい画面でも中央配置 */
+    }
+    .image-container img {
+        width: 35%; /* 3列に並べるために幅を30%に設定 */
+        margin: 5px; /* 画像間の余白 */
+    }
+
+    .title {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
