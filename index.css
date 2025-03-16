@@ -3,6 +3,22 @@ body {
     font-family:'Times New Roman', Times, serif;
 }
 
+.name-box {
+    display: flex;
+}
+
+.name {
+    font-size: 200px;
+    margin-top: 250px;
+    margin-left: 30px;
+}
+
+.name-alp {
+    font-size: 80px;
+    margin-top: 400px;
+    margin-left: 30px;
+}
+
 img {
     width: 200px; /* 幅を200pxに設定 */
     height: auto; /* 高さを自動調整 */
@@ -115,5 +131,20 @@ nav ul li a {
     .title {
         font-size: 15px;
         padding: 10px;
+    }
+
+    .name-box {
+        display: inline;
+    }
+
+    .name-alp {
+        font-size: 50px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+
+    .name {
+        font-size: 150px;
+        margin-top: 250px;
     }
 }
