@@ -20,6 +20,13 @@ h1 {
     margin: 0;
     font-size: 24px;
 }
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    font-family:'Times New Roman', Times, serif;
+}
+
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -44,6 +51,28 @@ nav ul li a {
 }
 
 
+.box1 {
+    display: inline-block; /* コンテンツの幅にフィット */
+    margin: 2em auto; /* 上下マージン + 中央配置 */
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 1.5px black;
+    border-bottom: solid 1.5px black;
+}
+
+.box1:before, .box1:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: px;
+    height: calc(100% + 20px);
+    background-color: black;
+}
+
+.box1:before { left: 10px; }
+.box1:after { right: 10px; }
+
+
 .image-container {
     display: flex;
     justify-content: space-evenly; /* 画像同士の間隔を均等にする */
@@ -57,6 +86,8 @@ nav ul li a {
     width: 300px;
     height: auto;
 }
+
+
 
 
 
