@@ -35,3 +35,26 @@
     z-index: 4;
     transform: scale(1.1);
 }
+
+
+
+
+
+
+.parents {
+    margin-top: 100px;
+}
+
+.child_1 {
+    display: flex; /* 横並びにする */
+    align-items: center; /* 縦方向の中央揃え */
+    gap: 20px; /* 画像とテキストの間隔を調整 */
+}
+
+.detail_1 {
+    display: inline-block; /* 背景を文字のみに適用 */
+    padding: 0.5em 1em;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+}
